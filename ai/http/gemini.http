@@ -1,8 +1,13 @@
+###
 // @no-log
 // @name 제미니 채팅
-###
 POST http://localhost:8080/api/google-gemini/chat
 
 {
     "message": "반가워"
 }
+
+###
+// @no-log
+// @name 제미니 일정 가져오기
+GET http://localhost:8080/api/google-gemini/time
