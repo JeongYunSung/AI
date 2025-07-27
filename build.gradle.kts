@@ -24,21 +24,12 @@ subprojects {
 		mavenCentral()
 	}
 
-	extra["springAiVersion"] = "1.0.0"
-
 	dependencies {
 		implementation("org.jetbrains.kotlin:kotlin-reflect")
 		implementation("org.springframework.boot:spring-boot-starter-web")
-		implementation("org.springframework.ai:spring-ai-starter-model-vertex-ai-gemini")
 		testImplementation("org.springframework.boot:spring-boot-starter-test")
 		testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
 		testRuntimeOnly("org.junit.platform:junit-platform-launcher")
-	}
-
-	dependencyManagement {
-		imports {
-			mavenBom("org.springframework.ai:spring-ai-bom:${property("springAiVersion")}")
-		}
 	}
 
 	kotlin {
