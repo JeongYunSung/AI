@@ -1,1 +1,3 @@
-rootProject.name = "ai"
+rootProject.name = "SpringAll-In-One"
+
+include("ai")
