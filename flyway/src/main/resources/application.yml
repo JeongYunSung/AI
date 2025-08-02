@@ -2,3 +2,10 @@ spring:
   config:
     import:
       - file:./config/application-mysql.yml
+  flyway:
+    baseline-on-migrate: false
+    baseline-version: 0
+    baseline-description: Production DB baseline - V1부터 Flyway 관리 시작
+  jpa:
+    hibernate:
+      ddl-auto: validate
